@@ -1,18 +1,77 @@
-<!--Navigational Menu-->
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="teaching.html">Teaching Practice</a></li>
-        <li><a href="projects.html">Project Showcase</a></li>
-        <li><a href="workedsamples.html">Samples of Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-<!--This is the section for contact information-->
-<h1 style="color: rgb(245, 131, 194);">Contact Me</h1>
-<p>For any enquiries, please feel free to reach me through the following contact methods.</p>
-<h2>Email</h2>
-<p>s00344872@myacu.edu.au</p>
-<h3>Phone</h3>
-<p>04** *** ***</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Annabelle’s Teaching Portfolio — Contact</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="textsize.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <aside id="sidebar">
+      <div class="inner">
+        <nav id="menu" aria-label="Primary">
+          <h2>Menu</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="teaching.html">Teaching Practice</a></li>
+            <li><a href="projects.html">Project Showcase</a></li>
+            <li><a href="workedsamples.html">Samples of Work</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main id="main">
+      <div class="inner">
+        <header id="header">
+          <a href="index.html" class="logo"><strong>Annabelle’s Teaching Portfolio</strong></a>
+          <div class="text-size-toolbar" role="group" aria-label="Text size controls">
+            <button class="text-size-btn" id="decreaseText" aria-label="Decrease text size">A−</button>
+            <button class="text-size-btn" id="increaseText" aria-label="Increase text size">A+</button>
+          </div>
+        </header>
+
+        <section class="section">
+          <h1>Contact Me</h1>
+          <h2>Get in touch</h2>
+
+          <form id="contact-form" action="https://formsubmit.co/faab8367c3deb9dff78739eef74dc5d8" method="post" autocomplete="on">
+            <fieldset>
+              <legend>Your details</legend>
+
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Annabelle Youkhana" required minlength="2" autocomplete="name" aria-describedby="name-help">
+              <small id="name-help" class="help">Please enter your full name.</small>
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="annabellyoukhana123@gmail.com" required autocomplete="email" inputmode="email" aria-describedby="email-help">
+              <small id="email-help" class="help">We’ll only use this to reply to you.</small>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="How’s it going—anything I can help with?" required minlength="8" aria-describedby="message-help"></textarea>
+              <small id="message-help" class="help">At least 8 characters.</small>
+
+              <!-- Honeypot -->
+              <input type="text" name="_honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+
+              <button type="submit">Send</button>
+            </fieldset>
+          </form>
+
+          <p id="form-status" role="status" aria-live="polite" hidden></p>
+        </section>
+
+        <footer id="footer">
+          <p class="copyright">&copy; 2025 Annabelle Youkhana. All rights reserved.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
